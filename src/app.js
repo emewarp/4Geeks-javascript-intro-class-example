@@ -8,8 +8,13 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
-  giveMeThePassword();
 };
+
+function isTheHouseInHowgarts(house) {
+  const houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"];
+
+  document.getElementById("heading").innerHTML = "Welcome to Hogwarts";
+}
 
 function giveMeThePassword(student, house) {
   const houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"];
@@ -20,6 +25,4 @@ function giveMeThePassword(student, house) {
     { house: "Ravenclaw", password: "c" },
     { house: "Hufflepuff", password: "d" }
   ];
-
-  document.getElementById("heading").innerHTML = "Welcome to Hogwarts";
 }
